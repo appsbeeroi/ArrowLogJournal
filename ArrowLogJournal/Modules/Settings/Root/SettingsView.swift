@@ -65,9 +65,10 @@ struct SettingsView: View {
             .padding(.horizontal, 35)
             
             if isShowWeb,
-               let url = URL(string: "https://www.apple.com") {
+               let url = URL(string: "https://sites.google.com/view/arrowlogjournal/home") {
                 WebView(url: url) {
                     hasTabBarShown = true
+                    isShowWeb = false 
                 }
                 .ignoresSafeArea(edges: [.bottom])
             }
