@@ -18,9 +18,9 @@ struct SplashScreen: View {
                     .scaleEffect(2)
             }
         }
-        .onAppear {
-            DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-                isLaunched = true 
+        .onReceive(NotificationCenter.default.publisher(for: .splashTransition)) { _ in
+            withAnimation {
+                isLaunched = true
             }
         }
     }

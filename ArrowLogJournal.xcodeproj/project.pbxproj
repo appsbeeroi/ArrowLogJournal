@@ -6,6 +6,14 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		7E9688192EB7895600A0E158 /* AppsFlyerLib-Static in Frameworks */ = {isa = PBXBuildFile; productRef = 7E9688182EB7895600A0E158 /* AppsFlyerLib-Static */; };
+		7E96881C2EB78A2400A0E158 /* FirebaseAnalyticsIdentitySupport in Frameworks */ = {isa = PBXBuildFile; productRef = 7E96881B2EB78A2400A0E158 /* FirebaseAnalyticsIdentitySupport */; };
+		7E96881E2EB78A2400A0E158 /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = 7E96881D2EB78A2400A0E158 /* FirebaseRemoteConfig */; };
+		7E9688212EB78A4D00A0E158 /* OneSignalFramework in Frameworks */ = {isa = PBXBuildFile; productRef = 7E9688202EB78A4D00A0E158 /* OneSignalFramework */; };
+		7E9688232EB78A4D00A0E158 /* OneSignalInAppMessages in Frameworks */ = {isa = PBXBuildFile; productRef = 7E9688222EB78A4D00A0E158 /* OneSignalInAppMessages */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		7E5A57E32EADC63C00AFDC42 /* ArrowLogJournal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArrowLogJournal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -36,6 +44,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E9688232EB78A4D00A0E158 /* OneSignalInAppMessages in Frameworks */,
+				7E9688212EB78A4D00A0E158 /* OneSignalFramework in Frameworks */,
+				7E96881E2EB78A2400A0E158 /* FirebaseRemoteConfig in Frameworks */,
+				7E96881C2EB78A2400A0E158 /* FirebaseAnalyticsIdentitySupport in Frameworks */,
+				7E9688192EB7895600A0E158 /* AppsFlyerLib-Static in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +91,11 @@
 			);
 			name = ArrowLogJournal;
 			packageProductDependencies = (
+				7E9688182EB7895600A0E158 /* AppsFlyerLib-Static */,
+				7E96881B2EB78A2400A0E158 /* FirebaseAnalyticsIdentitySupport */,
+				7E96881D2EB78A2400A0E158 /* FirebaseRemoteConfig */,
+				7E9688202EB78A4D00A0E158 /* OneSignalFramework */,
+				7E9688222EB78A4D00A0E158 /* OneSignalInAppMessages */,
 			);
 			productName = ArrowLogJournal;
 			productReference = 7E5A57E32EADC63C00AFDC42 /* ArrowLogJournal.app */;
@@ -107,6 +125,11 @@
 			);
 			mainGroup = 7E5A57DA2EADC63C00AFDC42;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				7E9688172EB7895600A0E158 /* XCRemoteSwiftPackageReference "AppsFlyerFramework-Static" */,
+				7E96881A2EB78A2400A0E158 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				7E96881F2EB78A4D00A0E158 /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 7E5A57E42EADC63C00AFDC42 /* Products */;
 			projectDirPath = "";
@@ -263,12 +286,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = ArrowLogJournal/ArrowLogJournal.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ArrowLogJournal/Info.plist;
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "This identifier will be used to deliver personalized ads and improve your experience.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -280,7 +305,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.arrow.log.journal.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -304,12 +329,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = ArrowLogJournal/ArrowLogJournal.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ArrowLogJournal/Info.plist;
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "This identifier will be used to deliver personalized ads and improve your experience.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -321,7 +348,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.arrow.log.journal.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -361,6 +388,61 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7E9688172EB7895600A0E158 /* XCRemoteSwiftPackageReference "AppsFlyerFramework-Static" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppsFlyerSDK/AppsFlyerFramework-Static.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.17.7;
+			};
+		};
+		7E96881A2EB78A2400A0E158 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.5.0;
+			};
+		};
+		7E96881F2EB78A4D00A0E158 /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/OneSignal/OneSignal-iOS-SDK";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.2.15;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7E9688182EB7895600A0E158 /* AppsFlyerLib-Static */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7E9688172EB7895600A0E158 /* XCRemoteSwiftPackageReference "AppsFlyerFramework-Static" */;
+			productName = "AppsFlyerLib-Static";
+		};
+		7E96881B2EB78A2400A0E158 /* FirebaseAnalyticsIdentitySupport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7E96881A2EB78A2400A0E158 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsIdentitySupport;
+		};
+		7E96881D2EB78A2400A0E158 /* FirebaseRemoteConfig */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7E96881A2EB78A2400A0E158 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfig;
+		};
+		7E9688202EB78A4D00A0E158 /* OneSignalFramework */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7E96881F2EB78A4D00A0E158 /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */;
+			productName = OneSignalFramework;
+		};
+		7E9688222EB78A4D00A0E158 /* OneSignalInAppMessages */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7E96881F2EB78A4D00A0E158 /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */;
+			productName = OneSignalInAppMessages;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7E5A57DB2EADC63C00AFDC42 /* Project object */;
 }
