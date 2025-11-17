@@ -8,7 +8,7 @@ final class UDManager {
     private let encoder = JSONEncoder()
     private let decoder = JSONDecoder()
     
-    func set<T: Codable>(_ value: T, for key: UDKeys) async {
+    func setUnique<T: Codable>(_ value: T, for key: UDKeys) async {
         do {
             let data = try encoder.encode(value)
             defaults.set(data, forKey: key.rawValue)

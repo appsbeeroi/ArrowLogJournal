@@ -33,7 +33,7 @@ final class SessionsViewModel: ObservableObject {
                 sessions.append(session)
             }
             
-            await self.userDefaultManager.set(sessions, for: .sessions)
+            await self.userDefaultManager.setUnique(sessions, for: .sessions)
             
             await MainActor.run {
                 self.navigationPath.removeAll()
@@ -51,7 +51,7 @@ final class SessionsViewModel: ObservableObject {
                 sessions.remove(at: index)
             }
             
-            await self.userDefaultManager.set(sessions, for: .sessions)
+            await self.userDefaultManager.setUnique(sessions, for: .sessions)
             
             await MainActor.run {
                 self.navigationPath.removeAll()

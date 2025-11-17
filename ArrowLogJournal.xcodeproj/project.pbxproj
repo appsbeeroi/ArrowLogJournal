@@ -12,6 +12,7 @@
 		7E96881E2EB78A2400A0E158 /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = 7E96881D2EB78A2400A0E158 /* FirebaseRemoteConfig */; };
 		7E9688212EB78A4D00A0E158 /* OneSignalFramework in Frameworks */ = {isa = PBXBuildFile; productRef = 7E9688202EB78A4D00A0E158 /* OneSignalFramework */; };
 		7E9688232EB78A4D00A0E158 /* OneSignalInAppMessages in Frameworks */ = {isa = PBXBuildFile; productRef = 7E9688222EB78A4D00A0E158 /* OneSignalInAppMessages */; };
+		7EE8F68F2ECB10FC00192745 /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 7EE8F68E2ECB10FC00192745 /* KeychainSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EE8F68F2ECB10FC00192745 /* KeychainSwift in Frameworks */,
 				7E9688232EB78A4D00A0E158 /* OneSignalInAppMessages in Frameworks */,
 				7E9688212EB78A4D00A0E158 /* OneSignalFramework in Frameworks */,
 				7E96881E2EB78A2400A0E158 /* FirebaseRemoteConfig in Frameworks */,
@@ -96,6 +98,7 @@
 				7E96881D2EB78A2400A0E158 /* FirebaseRemoteConfig */,
 				7E9688202EB78A4D00A0E158 /* OneSignalFramework */,
 				7E9688222EB78A4D00A0E158 /* OneSignalInAppMessages */,
+				7EE8F68E2ECB10FC00192745 /* KeychainSwift */,
 			);
 			productName = ArrowLogJournal;
 			productReference = 7E5A57E32EADC63C00AFDC42 /* ArrowLogJournal.app */;
@@ -129,6 +132,7 @@
 				7E9688172EB7895600A0E158 /* XCRemoteSwiftPackageReference "AppsFlyerFramework-Static" */,
 				7E96881A2EB78A2400A0E158 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				7E96881F2EB78A4D00A0E158 /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */,
+				7EE8F68D2ECB10FC00192745 /* XCRemoteSwiftPackageReference "keychain-swift" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 7E5A57E42EADC63C00AFDC42 /* Products */;
@@ -305,7 +309,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.arrow.log.journal.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -348,7 +352,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.arrow.log.journal.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -414,6 +418,14 @@
 				minimumVersion = 5.2.15;
 			};
 		};
+		7EE8F68D2ECB10FC00192745 /* XCRemoteSwiftPackageReference "keychain-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/evgenyneu/keychain-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 24.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -441,6 +453,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 7E96881F2EB78A4D00A0E158 /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */;
 			productName = OneSignalInAppMessages;
+		};
+		7EE8F68E2ECB10FC00192745 /* KeychainSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7EE8F68D2ECB10FC00192745 /* XCRemoteSwiftPackageReference "keychain-swift" */;
+			productName = KeychainSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
